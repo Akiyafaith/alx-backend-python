@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Create a tuple with the input string and the square of the integer/float value."""
+"""Create a tuple with the input string
+and the square of the integer/float value."""
 from typing import Union, Tuple
 
 
