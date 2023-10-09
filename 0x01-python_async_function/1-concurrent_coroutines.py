@@ -6,11 +6,6 @@ import asyncio
 from typing import List
 
 
-MODULE_NAME = '0-basic_async_syntax'
-module = importlib.import_module(MODULE_NAME)
-wait_random = getattr(module, 'wait_random')
-
-
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """
     an async routine called wait_n that takes in 2 int arguments
