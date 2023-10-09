@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 """concurrent coroutines"""
 
-
+import importlib
 import asyncio
 from typing import List
 
 
-from basic_async_syntax import wait_random
+MODULE_NAME = '0-basic_async_syntax'
+module = importlib.import_module(MODULE_NAME)
+wait_random = getattr(module, 'wait_random')
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
