@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """Async wait"""
+
+
 import asyncio
 import random
 
