@@ -11,6 +11,5 @@ wait_random = getattr(module, 'wait_random')
 async def test(max_delay: int) -> float:
     """a function (do not create an async function, use the regular function syntax to do this)
     task_wait_random that takes an integer max_delay and returns a asyncio.Task"""
-    task = task_wait_random(max_delay)
-    await task
-    print(task.__class__)
+    return asyncio.create_task(wait_random(max_delay))
+
